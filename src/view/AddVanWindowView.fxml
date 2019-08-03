@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="453.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVanWindowController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="115.0" minHeight="0.0" prefHeight="45.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="238.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="64.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="334.0" minHeight="10.0" prefHeight="125.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="ID:" />
+      
+      <Label text="Make:" GridPane.rowIndex="1" />
+      <Label text="Model:" GridPane.rowIndex="2" />
+      <Label text="Year:" GridPane.rowIndex="3" />
+      <Label text="Number Of Seats:" GridPane.rowIndex="4" />
+      <Label text="Last Maintenance Date:" GridPane.rowIndex="5" />
+      
+      
+      <TextField fx:id="addVanWindowIdField" GridPane.columnIndex="1" />
+      <TextField fx:id="addVanWindowMakeField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="addVanWindowModelField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="addVanWindowYearField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="addVanWindowNumberOfSeatsField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <DatePicker fx:id="addVanWindowLastMaintenanceDateField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <HBox prefHeight="50.0" prefWidth="222.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <children>
+            <Button fx:id="OKButton" mnemonicParsing="false" onAction="#handleAddVanWindowOKClick" text="OK" />
+            <Button mnemonicParsing="false" onAction="#handleAddVanWindowCancelClick" text="Cancel" />
+         </children>
+      </HBox>
+      
+      
+   </children>
+</GridPane>
